@@ -1,7 +1,6 @@
 package Etapa1;
 
 import java.util.Scanner;
-
 public class Paso3 {
 
 	public static void main(String[] args) {
@@ -9,7 +8,7 @@ public class Paso3 {
 
 		String[] arrCodigo = {"A-123","A-124","A-125","A-126"};
 		String[] arrNombre = {"Elmer Cubas Silva ","Manuel Cubas Silva ","Fernando Cubas Silva","Mathias Lingan Hernandez"};
-		int[] arrNota = {1000,500,1400,90};
+		int[] arrSaldo = {1000,500,1400,90};
 		String[] arrContraseña = {"2020", "2021" , "2022" , "2023"};
 		
 		System.out.println("B U S Q U E D A  D E  D A T O S");
@@ -20,7 +19,7 @@ public class Paso3 {
 		String contraseña = sc.nextLine();
 		
 		
-		int saldo = 500;
+		
 		int bandera =0;
 		int seleccion = 0;
 		int p = -1;
@@ -68,11 +67,11 @@ public class Paso3 {
 					
 				}while(bandera == 0);
 				if (seleccion == 1) {
-					System.out.println("\nSaldo disponible : " + saldo);
+					System.out.println("\nSaldo disponible : " + arrSaldo[p]);
 				}else if (seleccion == 2) {
 					System.out.print("Ingrese el Monto a Retirar:");
 					float monto = sc.nextFloat();
-					float saldo_actual =(saldo - monto);
+					float saldo_actual =(arrSaldo[p] - monto);
 					System.out.println("Monto Retirado : " + monto);
 					System.out.print("Saldo Actual: "+ saldo_actual );
 					
@@ -96,3 +95,7 @@ public class Paso3 {
 	}
 
 }
+
+	
+
+
