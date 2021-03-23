@@ -77,7 +77,7 @@ public class Paso3 {
 					
 				}else if (seleccion == 3) {
 					
-					System.out.println("Ingrese el Monto a Depositar");
+					System.out.println("Ingrese el Monto a Depositar:");
 					float dp = sc.nextFloat();
 					System.out.println("Monto depositado: " + dp);
 					System.out.print("Saldo Actual: " );
